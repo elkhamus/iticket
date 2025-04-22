@@ -6,3 +6,4 @@
 // add event entity and migration
 // create EventsController
 // implement event creation logic
+// add event search by category

@@ -8,3 +8,4 @@
 // implement event creation logic
 // add event search by category
 // add validation to events DTO
+// create Ticket module

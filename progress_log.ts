@@ -10,3 +10,4 @@
 // add validation to events DTO
 // create Ticket module
 // add Ticket entity and types
+// implement ticket availability check

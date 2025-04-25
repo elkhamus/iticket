@@ -13,3 +13,4 @@
 // implement ticket availability check
 // add controller for creating tickets
 // setup user registration
+// add forgot/reset password

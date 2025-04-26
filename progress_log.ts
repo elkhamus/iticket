@@ -16,3 +16,4 @@
 // add forgot/reset password
 // setup image upload service
 // add site settings module
+// implement categories entity

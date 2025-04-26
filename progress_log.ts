@@ -18,3 +18,4 @@
 // add site settings module
 // implement categories entity
 // create category controller and service
+// add filtering to events

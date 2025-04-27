@@ -19,3 +19,4 @@
 // implement categories entity
 // create category controller and service
 // add filtering to events
+// configure .env and config service

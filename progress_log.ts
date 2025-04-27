@@ -21,3 +21,4 @@
 // add filtering to events
 // configure .env and config service
 // create Venue module
+// venue CRUD operations

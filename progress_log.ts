@@ -23,3 +23,4 @@
 // create Venue module
 // venue CRUD operations
 // add slider controller and image dto
+// fix minor bugs in user module

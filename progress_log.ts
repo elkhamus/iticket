@@ -26,3 +26,4 @@
 // fix minor bugs in user module
 // add role-based auth decorator
 // implement guards and middleware
+// seed default admin user

@@ -25,3 +25,4 @@
 // add slider controller and image dto
 // fix minor bugs in user module
 // add role-based auth decorator
+// implement guards and middleware

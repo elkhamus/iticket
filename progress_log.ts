@@ -29,3 +29,4 @@
 // seed default admin user
 // add Swagger and Scalar UI
 // finalize testing script and e2e coverage
+// optimize ticket pricing algorithm

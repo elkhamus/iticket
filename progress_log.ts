@@ -31,3 +31,4 @@
 // finalize testing script and e2e coverage
 // optimize ticket pricing algorithm
 // add helper for seed & database init
+// update README and API reference

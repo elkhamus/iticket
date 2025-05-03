@@ -19,8 +19,8 @@ export class UpdateSettingsDto {
     @Type()
     @IsString()
     @Length(13, 13)
-    @ApiProperty({example: '0xx-xxx-xx-xx'})
-    @Matches(/[0][0-9][0-9][-][0-9][0-9][0-9][-][0-9][0-9][-][0-9][0-9]/g, {
+    @ApiProperty({example: '0554990105'})
+    @Matches(/[0][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/g, {
       message: 'not a valid format for a number',
     })
     number: string;

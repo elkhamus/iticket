@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post, Query, UseGuards } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Patch, Post, Query, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { EventsService } from "./events.service";
 import { GetEventDto } from "./dto/search-event.dto";
@@ -44,7 +44,7 @@ export class EventsController {
    return await this.eventService.create(body);
   }
 
-  @Post(':id')
+  @Patch(':id')
   @ApiBearerAuth()
   @UseGuards(AuthGard)
   @Roles(UserRole.ADMIN)

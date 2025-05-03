@@ -4,6 +4,7 @@ import {
     Delete,
     Get,
     Param,
+    Patch,
     Post,
     Query,
     UseGuards,
@@ -50,7 +51,7 @@ import { FindVenueDto } from './dto/search-venue.dto';
 
     @UseGuards(AuthGard)
     @Roles(UserRole.ADMIN)
-    @Post(':id')
+    @Patch(':id')
     async update(@Param('id') id: number, @Body() body: UpdateVenueDto) {
     return await this.venueService.update(id, body);
     }

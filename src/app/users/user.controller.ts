@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, NotFoundException, Param, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, NotFoundException, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { UserService } from './user.service';
 import { AuthGard } from 'src/guards/auth.guard';
@@ -36,7 +36,7 @@ export class UserController {
     return this.userService.updateProfile(body);
   }
   
-  @Post('update_profile/:id')
+  @Patch('update_profile/:id')
   @UseGuards(AuthGard)
   @Roles(UserRole.ADMIN)
   async update(@Param('id') id: number, @Body() body: UpdateUserDto) {

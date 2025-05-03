@@ -29,6 +29,9 @@ import { SettingsModule } from './app/siteSettings/siteSettings.module';
       username: config.database.user,
       password: config.database.password,
       database: config.database.database,
+      extra: {
+        ssl: { rejectUnauthorized: false } ,
+      },
       entities: [`${__dirname}/**/*.entity.{ts,js}`],
       synchronize: true,
     }),

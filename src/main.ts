@@ -17,10 +17,8 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // ✅ Serve Swagger UI at /api (optional, if you want both UIs)
   SwaggerModule.setup('api', app, document);
 
-  // ✅ Serve Scalar UI at /reference
   app.use(
     '/scalar',
     apiReference({

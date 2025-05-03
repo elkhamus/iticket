@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, Patch, Post, UseGuards } from "@nestjs/common";
 import { ApiBearerAuth, ApiTags } from "@nestjs/swagger";
 import { SettingsSevice } from "./siteSettings.service";
 import { UpdateSettingsDto } from "./dto/update-settings.dto";
@@ -22,7 +22,7 @@ export class SettingsController {
         return this.settingsService.getSettings();
     }
 
-    @Post('update')
+    @Patch('update')
     @Roles(UserRole.ADMIN)
     @ApiBearerAuth()
     @UseGuards(AuthGard)

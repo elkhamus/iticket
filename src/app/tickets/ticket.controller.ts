@@ -38,7 +38,7 @@ export class TicketController {
      return await this.ticketService.create(body);
     }
 
-    @Post(':id')
+    @Post('accept/:id')
     @ApiBearerAuth()
     @UseGuards(AuthGard)
     @Roles(UserRole.ADMIN)
@@ -46,7 +46,7 @@ export class TicketController {
      return await this.ticketService.acceptTicket(id);
     }
 
-    @Post(':id')
+    @Post('reject/:id')
     @ApiBearerAuth()
     @UseGuards(AuthGard)
     @Roles(UserRole.ADMIN)
